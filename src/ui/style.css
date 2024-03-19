@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+    height: 100vh;
+    padding: 1rem;
+    background-color: papayawhip;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggleBtn {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #fff;
+    background-color: hotpink;
+}
+
+#toggleBtn:hover {
+    transform: scale(1.1);
+    box-shadow: hotpink 0px 14px 28px;
+}
+
+#toggleBtn.on {
+    background-color: mediumaquamarine;
+}
+
+#toggleBtn.on:hover {
+    box-shadow: mediumaquamarine 0px 14px 28px;
+}
